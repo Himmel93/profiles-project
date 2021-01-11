@@ -17,7 +17,7 @@ class UserProfileManager(BaseUserManager):
 
         # encrpyt user password
         user.set_password(password)
-        user.save(using=slef.db)
+        user.save(using=self.db)
 
         return user
 
